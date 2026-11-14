@@ -396,8 +396,8 @@ many spins and is increasing in the set of empty sites.
 Let $F$ depend on the spins at $x_1,\dots,x_N$. Let $U_1,\dots,U_N$ be independent uniform variables on $[0,1]$ and
 define $\eta_{x_k}=0$ if $U_k\le\mu(\eta_{x_k}=0\mid\eta_{x_1},\dots,\eta_{x_{k-1}})$ and $\eta_{x_k}=1$ otherwise, the
 conditional probability being evaluated at the values already constructed. The resulting spins have law
-$\mu$. Each conditional probability is an average of conditional probabilities given $\eta_{\{x_1,\dots,x_k\}\setminus
-\{x_k\}}$ and is therefore at least $\varepsilon$ by \eqref{eq:odds}. Hence the set $\{x_k:U_k\le\varepsilon\}$, which has
+$\mu$. Each conditional probability is a conditional probability given $\eta_{V\setminus\{x_k\}}$ with
+$V=\{x_1,\dots,x_k\}$ and is therefore at least $\varepsilon$ by \eqref{eq:odds}. Hence the set $\{x_k:U_k\le\varepsilon\}$, which has
 law $\pi_\varepsilon$, is contained in the set of empty sites, and $F$ is increasing.
 \end{proof}
 
@@ -421,7 +421,7 @@ Let $\lambda=\mu(\{\mathbf 1\})$. If $\lambda=1$ there is nothing to prove. Othe
 $\nu=(\mu-\lambda\delta_{\mathbf 1})/(1-\lambda)$ is a stationary probability measure with $\nu(\{\mathbf 1\})=0$, and
 by Proposition~\ref{prop:stripbalance} it satisfies detailed balance. Since every FA-1f move is allowed and $V_n$ is
 connected, a single empty site in $V_n$ empties $V_n$, so $\mathcal G_{V_n}=\{\eta_{V_n}\ne1_{V_n}\}$. These events
-decrease to $\{\mathbf 1\}^c$ along the increasing $V_n$, so $\nu(\mathcal G_{V_n})\to\nu(\{\mathbf 1\}^c)=1$, and
+increase to $\{\mathbf 1\}^c$ along the increasing $V_n$, so $\nu(\mathcal G_{V_n})\to\nu(\{\mathbf 1\}^c)=1$, and
 $\pi(\mathcal G_{V_n})=1-p^{|V_n|}\to1$. By Lemma~\ref{lem:connect}, $\nu=\pi$.
 \end{proof}
 

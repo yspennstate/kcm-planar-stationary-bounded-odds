@@ -148,7 +148,7 @@ def main():
                     out.append(r)
                     print(r)
     os.makedirs("data", exist_ok=True)
-    with open(os.path.join("data", "finite_checks.json"), "w") as fh:
+    with open(os.path.join("data", "finite_checks.json"), "w", newline="\n") as fh:
         json.dump(out, fh, indent=1)
     print(len(out), "cases, all checks passed")
 
