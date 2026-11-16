@@ -159,7 +159,8 @@ separate problem. The proof uses the divergence of $\sum_n1/n$ and does not exte
 
 Section~\ref{sec:entropy} sets up the entropy balance for an arbitrary stationary measure. Section~\ref{sec:proofs}
 proves Theorem~\ref{thm:balance} and the balance part of Proposition~\ref{prop:strip}, Section~\ref{sec:ident} the
-identification, and Section~\ref{sec:fa2f} the internal spanning property of FA-2f.
+identification, and Section~\ref{sec:fa2f} the internal spanning property of FA-2f, a classical fact due to van
+Enter~\cite{vE87} and to Aizenman and Lebowitz~\cite{AL88}.
 
 \section{Entropy balance}\label{sec:entropy}
 
@@ -495,6 +496,16 @@ A Codex agent (OpenAI) proved Theorems~\ref{thm:balance} and~\ref{thm:identify},
 Lemma~\ref{lem:fa2f}; a second Codex agent checked the proofs as a referee; Claude agents (Anthropic) checked the steps
 and prepared the manuscript. The author directed the work and is responsible for the content of the paper and for
 decisions concerning its dissemination.
+
+The results rest on the work of others. The conjecture is due to Martinelli, Shapira and Toninelli~\cite{MST25}, and
+the route of the proof, detailed balance followed by identification through internal spanning, is theirs. The entropy
+argument goes back to Holley~\cite{Hol71} and to Holley and Stroock~\cite{HS77}, who treated dimension two without
+translation invariance for rates bounded away from zero, and the internal spanning property of FA-2f
+(Lemma~\ref{lem:fa2f}) is due to van Enter~\cite{vE87} and to Aizenman and Lebowitz~\cite{AL88}. These results are
+theirs. The new steps are the entropy balance of Lemma~\ref{lem:balance} and the shell bound of
+Lemma~\ref{lem:shell}, which under bounded conditional odds carry the two-dimensional argument through for constraints
+that vanish and give Theorem~\ref{thm:balance}, and the comparison with a product measure in
+Lemma~\ref{lem:domination}, which gives Theorem~\ref{thm:identify}.
 
 \section*{Code availability}
 A script that checks Remark~\ref{rem:finite} exactly for FA-1f and FA-2f on boxes of up to eight sites, with filled,
